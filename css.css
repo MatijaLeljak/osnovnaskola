@@ -1,0 +1,558 @@
+*{
+    box-sizing: border-box;
+    font-family: montserrat,Helvetica,Arial,sans-serif;
+}
+.top{
+    color:white;
+    position: relative;
+    font-size:14px;
+    line-height: 1.5;
+}
+.top__background {
+    position: absolute;
+    background-color: #8b949c;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: -1;
+}
+.top__tagline{
+    float:left;
+    padding: 8.5px 0px;
+    font-size: 14px;
+}
+.top__menu{
+    float:right;
+    padding: 8.5px 0px;
+}
+.login_naslov{
+        float: right;
+    width: 65px;
+    height: 28px;
+    margin: 0px;
+    text-align: center;
+    line-height: 28px;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    border-bottom: 1px solid #969696;
+    background-color: #D4D4D4;
+    margin-left:10px;
+}
+
+.login_form input{
+    width: auto;
+    height: auto;
+    margin: 2px;
+    padding: 0px;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: normal;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #D4D4D4;
+    vertical-align: middle;
+}
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+.container:after{
+    clear: both;
+}
+.header:before, .header:after {
+    content: " ";
+    display: table;
+}
+.header{
+    background: white;
+    margin-bottom: 35px;
+    -webkit-box-shadow: 0px 6px 29px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 29px -7px rgba(0,0,0,0.75);
+box-shadow: 0px 6px 29px -7px rgba(0,0,0,0.75);
+    padding: 0 30px;
+    
+}
+.logo{
+    text-align: center;
+    display: block;
+    float:none;
+}
+.header-widgets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    clear: both;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.header-widgets__widget {
+    padding: 0 20px;
+    position: relative;
+    display: inline-block;
+    border-top: none;
+    vertical-align: top;
+}
+.icon-box__title {
+    margin: 5px 0 2px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #676b6f;
+    font-family: montserrat,Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+  /* Sub Menu */
+}
+nav ul li a {
+	display: block;
+	border-left: 4px solid transparent;
+	padding: 10px 15px;
+	color: #333;
+	text-decoration: none;
+	
+}
+nav ul li a:hover {
+	color:black;
+    border-left: 4px solid #C1C1C1;
+    font-weight: bolder;
+
+}
+nav ul li a .fa {
+	width: 16px;
+	text-align: center;
+	margin-right: 5px;
+	float:right;
+}
+nav ul ul {
+	background-color:#ebebeb;
+}
+nav ul li ul li a {
+	background: #fff;
+	color: black;
+	border-left: 4px solid transparent;
+	padding: 10px 20px;
+}
+nav ul li ul li a:hover {
+	font-weight: bolder;
+	border-left: 4px solid #C8C4C8;
+}
+.jumbotron {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 3px 0 rgb(31 31 31 / 5%);
+    border-radius: 2px;
+}
+.item{
+    position: relative
+}
+.item>img{
+    width: 100%;
+    padding:12px 0 0 0;
+}
+
+
+.search-box{
+  width: 100%;
+  position: relative;
+  display: flex;
+margin-bottom: 5px;
+    padding:15px
+}
+.search-input{
+  width: 100%;
+  border: 2px solid #8b949c;
+  border-radius:10px 0 0 10px ;
+  border-right: none;
+  outline: none;
+  font-size: 16px;
+  background: none;
+}
+.search-button{
+ text-align: center;
+height: 51px;
+width: 40px;
+outline: none;
+cursor: pointer;
+border: 2px solid #8b949c;
+ border-radius: 0 10px 10px 0 ;
+height: 40px;
+background: #8b949c;
+font-size: 16px;
+border-left: 2px solid #8b949c;
+}
+
+/* kartice*/
+.cards-wrapper {
+  
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  margin: 0 auto 10px auto;
+  width: 100%;
+}
+
+.card {
+  --bg-filter-opacity: 0.5;
+  width: 100%;
+  font-size: 1.5em;
+  color: black;
+  border-radius: 1em;
+  padding: 0 1em 1em 1em;
+  /*margin: 2em;*/
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+
+.card h6 {
+  margin: 0;
+ text-align: center;
+  color:black;
+}
+.card label{
+    font-size: 1rem;
+    text-align: center;
+    
+}
+.card input{
+    vertical-align: middle;
+        margin: 3px 3px 0 5px;
+}
+.card p {
+  font-size: 16px;
+  margin-top: 0.5em;
+    color:#8b949c;
+}
+.card h3{
+    color:black;
+}
+
+.card .tags {
+  display: flex;
+}
+
+.card .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+hr{
+    color:black;
+}
+.card:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+
+.card:before, .card:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.card:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+.card:after {
+  background: white;
+  width: 200%;
+  height: 200%;
+}
+.card table th, .card table td{
+	font-size:1rem;
+}
+.card:hover {
+  color: var(--color);
+}
+
+.card:hover:before, .card:hover:after {
+  transform: scale(1);
+}
+
+.info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+}
+
+.info img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.info h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+span ul li a{
+    font-size: 16px;
+}
+
+/* 2. kartica */
+.box span {
+    color: var(--grayishBlue);
+    font-size:12px
+}
+.box h5{
+    font-weight: bolder;
+    text-align: center;
+}
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px; 
+    position: relative;
+}
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+.cyan {
+    border-top: 3px solid #8b949c;
+}
+.red {
+    border-top: 3px solid #8b949c;
+}
+.blue {
+    border-top: 3px solid var(--blue);
+}
+.orange {
+    border-top: 3px solid var(--orange);
+}
+.box .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+.card ul li{
+    color:black;
+    list-style-type: none;
+    font-size: 14px
+}
+.gumb{
+    width: 80px;
+    
+    text-align: center;
+    line-height: 28px;
+    
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    border:none;
+    background-color: #8b949c;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+th{
+    font-size:1rem;
+}
+td{
+    font-size: 1rem;
+}
+.card th:nth-child(2), .card td:nth-child(2){
+position: relative;
+left:2vw;
+}
+.kalnik{
+    background-image: url(slike/kalnik.jpg);
+        border: 10px solid #ccc;
+    height:500px;
+}
+.sajam{
+    background-image: url(slike/sajam.jpg);
+        border: 10px solid #ccc;
+    height:500px;
+}
+.maskare{
+    background-image: url(slike/maskare.jpg);
+        border: 10px solid #ccc;
+    height:500px;
+}
+.kalnik div, .sajam div, .maskare div{
+    margin: auto;
+    color:white;
+    font-size: 1.5vw;
+    text-shadow: 0px 0px 15px black;
+    text-align: center;
+}
+.osoba div{
+    margin: auto;
+    color:black;
+    font-size: 1.5vw;
+    text-shadow: 0px 0px 15px black;
+    text-align: center;
+}
+.col-md-9 table tr{
+    border-bottom: 1px solid #8b949c;
+    
+}
+.col-md-9 table th{
+   width:20%;
+    background:#8b949c; 
+}
+.col-md-9 table th:nth-child(1){
+    width:5%;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.responsive{
+    max-width: 100%;
+    max-height: 100%;
+}
+.box > a{
+    text-decoration: none;
+    color: black;
+}
+.box table tr td{
+    padding: 15px;
+}
+.forum{
+    word-break: break-word;
+}
+.box .forum:nth-child(n+4){
+    margin-left:20px;
+    border-top: 1px dotted gray;
+}
+.osoba{
+    background-image: url(slike/musko.jfif);
+    border: 10px solid #ccc;
+    height:300px;
+}
+.informacije table tr td{
+    border:1px solid gray;
+    padding:0.5vw;
+}
+.informacije table th{
+    border:1px solid black;
+    width:auto;
+    text-align: center;
+}
+@media (max-width: 768px){
+    nav ul li a{
+        font-size: 1.5vw;
+}
+    .card{
+        padding: 0;
+    }
+    .card h6{
+        font-size: 1.5vw;
+        overflow-wrap: initial;
+    }
+    .card p{
+        font-size: 1.7vw;
+    }
+    .card ul li{
+        font-size: 1.5vw
+    }
+    .icon-box__title, .login_naslov, .top{
+        font-size: 1.5vw;
+    }
+    .search-box{
+        padding:15px 0;
+    }
+    p, a{
+        font-size:1.5vw;
+    }
+    .logo h3 a{
+        font-size:2.5vw;
+    }
+	.card table th, .card table td{
+		font-size:0.4rem;
+	}
+}
+@media (min-width:768px) and (max-width: 992px){
+	.card table th, .card table td{
+		font-size:0.6rem;
+	}
+}
+.download{
+    margin:25px;
+}
+.download a{
+    color: black;
+    border: 1px solid;
+    padding: 10px;
+}
+.download a:hover{
+    background-color: #8b949c;
+}
+.bottom{
+	    color: black;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.bottom a{
+	text-decoration:none;
+	color:black;
+}
+.natjecaj:hover {
+	font-weight:bolder;
+}
+.header-widgets__widget a:hover{
+	color:black;
+}
